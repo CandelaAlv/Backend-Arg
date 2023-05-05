@@ -55,32 +55,6 @@ public class CHabilidad {
     }
     
     
-    
-    
-    
-    
-   // @GetMapping("/ver/habilidad")
-    //@ResponseBody
-    //public List<Habilidad> verHabilidad() {
-
-     //   return sHabilidad.verHabilidad();
-    //}
-
-    
-
-  //  @PostMapping("/new/habilidad")
-//public String crearHabilidad (@RequestBody Habilidad habi){
-
-//sHabilidad.crearHabilidad(habi);
-//return "la habilidad fue creada";
-//}
-
-//@DeleteMapping ("habilidad/delete/{id}")
-//public String borrarHabilidad(@PathVariable Long id){
-//sHabilidad.borrarHabilidad(id);
-//return "la habilidad fue borrada";
-
-//}
 
 
     
@@ -101,7 +75,7 @@ public class CHabilidad {
 
 
 
-// ver que onda este
+// ver si funciona mejor el editar de profe luisina este
 @PutMapping("/editar/{id}")
 public Habilidad editarHabilidad(@PathVariable int id, @RequestParam("habilidad") String
 nuevaHabilidad, @RequestParam("porcentaje") int nuevoPorcentaje ) {
@@ -117,7 +91,7 @@ return habi;
 
 
 
-//ver este
+//o ver este
 @PutMapping("/update")
     public void edit(@RequestBody Habilidad habi) {
         sHabilidad.save(habi);

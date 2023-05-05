@@ -67,34 +67,6 @@ public Optional<Persona> getByName(String name){
      public boolean existsByNombre(String name){
          return iPersona.existsByName(name);
      }
-  //este de abajo es el mio original
-//public List<Persona> verPersonas() {
-//List<Persona> listaPersonas = iPersona.findAll();
-//return listaPersonas;
-//}
-
-
- 
- 
- 
-
-
-//este lo agregué recien
-//public Persona login(String email, String clave){
-  //      List<Persona> personas = iPersona.findByEmailAndClave(email, clave);
- //       if (!personas.isEmpty()) {
-  //          return personas.get(0);
-   //     }
- //       return null;
-  //  }
-//
-
-
-//este es el mio abajo
-//public Persona buscarPersona(Long id) {
-//Persona perso= iPersona.findById(id).orElse(null);
-//return perso;
-//}
 
 
 

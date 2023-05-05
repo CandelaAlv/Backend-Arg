@@ -23,11 +23,6 @@ REstudio rEstudio;
     }
 
 
-//public List<Estudio> verEstudio(){
-//List<Estudio> listaEstudio = rEstudio.findAll();
-//return rEstudio.findAll();
-//}
-
 
   //un estudio
       public Estudio getOne(int id){
@@ -88,7 +83,7 @@ REstudio rEstudio;
 //}
 
 
- //busca lista de relojes por la id de la persona
+ //busca lista de estudios por la id de la persona
     public List<Estudio> findByPersonaId(Long personaId) {
         return rEstudio.findByPersonaId(personaId);
     }

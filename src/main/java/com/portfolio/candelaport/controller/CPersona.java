@@ -34,13 +34,6 @@ public class CPersona {
 SPersona persoServ;
 
 
-
-//despues tomarse el trabajo de ver si usa distintas palabras como pers persona per depende donde y hacer lo mismo con todo
-// VER lo de LONG id si tiene o no LONG o int
-    //Ver que por alguna razon sus ("/crear") se repiten y el netbeans no le pide otra direccion
-
-
-   
     
 //una persona
 
@@ -58,15 +51,6 @@ SPersona persoServ;
     }
     
     
-
-
-
-//@GetMapping("personas/ver")
-//@ResponseBody
-//public List<Persona> verPersonas(){
-
-//return persoServ.verPersonas();
-//}
 
 
 
@@ -119,19 +103,6 @@ return per;
 }
 
 
-
-//deberia ser algo asi
-//@PutMapping("/update")
-   // public void editarPersona(@RequestBody Persona per){
-    //    IPersonaService.edit(per);
-   // }
-
-
-//o
-//@PutMapping("personas/update/{id}")
-   // public void editarPersona(@RequestBody Persona per){
-  //     persoServ.editarPersona(per);
-  //  }
 
 
 }

@@ -73,17 +73,6 @@ STrabajo sTrabajo;
 
 
 
-//@DeleteMapping ("trabajos/delete/{id}")
-//public String borrarTrabajo(@PathVariable Long id){
-//sTrabajo.borrarTrabajo(id);
-//return "el trabajo fue borrado";
-
-//}
-
-
-
-
-
 
 // ver que onda este
 @PutMapping("/editar/{id}")
@@ -103,7 +92,7 @@ return trab;
 }
 
 
-//como le queo
+//probar update
  @PutMapping("/update")
     public void edit(@RequestBody Trabajo trab) {      
         sTrabajo.save(trab);

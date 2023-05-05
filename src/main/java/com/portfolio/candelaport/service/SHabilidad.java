@@ -26,13 +26,7 @@ public class SHabilidad {
      
      
      
-   //   public List<Habilidad> verHabilidad() {
-  //      List <Habilidad> listaHabilidad = rHabilidad.findAll();
-  //      return rHabilidad.findAll();
- //   }
-
-     
-     //parece este
+     //parece este va mejor
         public Habilidad getOne(int id){
         return rHabilidad.findById(id).orElse(null);
     }
@@ -57,15 +51,7 @@ public class SHabilidad {
         return rHabilidad.findByPersonaId(personaId);
     }
  
-        
-   //  public void crearHabilidad(Habilidad habi) {
-
-  //      rHabilidad.save(habi);
-  //  }
-
-     
-     
-     
+  
 
       
     //--------------------------------------------
@@ -78,9 +64,5 @@ public class SHabilidad {
 
 
 
-//--------------------------------------------
-    
-    
-    
     
 }

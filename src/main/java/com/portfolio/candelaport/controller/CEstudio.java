@@ -32,10 +32,6 @@ SEstudio sEstudio;
 
 
 
-//despues tomarse el trabajo de ver si usa distintas palabras como pers persona per depende donde y hacer lo mismo con todo
-// VER lo de LONG id si tiene o no LONG o int
-    //Ver que por alguna razon sus ("/crear") se repiten y el netbeans no le pide otra direccion
-
 
 
 // ver todo
@@ -55,13 +51,6 @@ SEstudio sEstudio;
 
 
 
-//@GetMapping("/ver/estudio")
-//@ResponseBody
-//public List<Estudio> verEstudio(){
-
-//return sEstudio.verEstudio();
-//}
-
     //ver UNO
       @GetMapping("/detail/{id}")
     public ResponseEntity<Estudio> detail(@PathVariable("id") int id){
@@ -78,28 +67,12 @@ SEstudio sEstudio;
     }
 
 
-//@PostMapping("/new/estudio")
-//public String crearEstudio (@RequestBody Estudio estu){
-
-//sEstudio.save(estu);
-//return "el estudio fue creado";
-//}
-
    
     @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable ("id") int id){
         sEstudio.delete(id);
     }
 
-
-
-
-//@DeleteMapping ("estudios/delete/{id}")
-//public String borrarEstudio(@PathVariable int id){
-//sEstudio.delete(id);
-//return "el estudio fue borrado";
-
-//}
 
 
 

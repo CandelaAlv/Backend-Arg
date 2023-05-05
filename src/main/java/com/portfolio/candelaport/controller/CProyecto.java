@@ -65,33 +65,13 @@ return "el proyecto fue creado";
 }
    
 
-    
-  //@PostMapping("/create")
-   // public void create(@RequestBody Proyecto proye) {
-  //      sProyecto.save(proye);
-    //}
-    
+ 
     
     @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable ("id") int id){
         sProyecto.delete(id);
     }
 
-
-  //  @GetMapping("/ver/proyecto")
-//@ResponseBody
-//public List<Proyecto> verProyecto(){
-
-//return sProyecto.verProyecto();
-//}
-    
-
-//@DeleteMapping ("proyecto/delete/{id}")
-//public String borrarProyecto(@PathVariable Long id){
-//sProyecto.borrarProyecto(id);
-//return "el proyecto fue borrado";
-
-//}
 
 
 
